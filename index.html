@@ -31,6 +31,188 @@
     ></script>
 
     <title>Code like Barbie Lodge Landing Page-Bancy</title>
+    <style>
+      html {
+        max-width: 980px;
+      }
+      :root {
+        --primary-color: #662eed;
+        --secondary-bg-color: #edaa73;
+        --box-shadow: 5px 8px 16px rgba(0, 0, 000.2);
+      }
+      body {
+        font-family: poppins;
+        font-weight: 300;
+        background-color: var(--secondary-bg-color);
+        max-width: 980px;
+        padding: 0;
+        margin: auto;
+      }
+      .container {
+        margin: auto;
+      }
+
+      h1 {
+        font-weight: 700;
+        font-family: playfairDisplay;
+        color: var(--primary-color);
+        font-size: 80px;
+        line-height: 100px;
+      }
+      .entire-building {
+        height: 300px;
+      }
+      .name {
+        box-shadow: var(--box-shadow);
+        border-radius: 4px;
+      }
+
+      footer {
+        background-color: #d3c0c4;
+      }
+
+      @media (min-width: 576px) {
+        .logo {
+          margin-right: 384px;
+        }
+      }
+      @media (max-width: 576px) {
+        h1 {
+          font-size: 64px;
+          line-height: 80px;
+        }
+      }
+    </style>
   </head>
-  <body></body>
+  <body class="border border-success">
+    <div class="container">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img
+              src="./logo.webp"
+              alt="logo"
+              width="80"
+              class="img-fluid logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#rooms">Rooms</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-us">Contact Us</a>
+              </li>
+            </ul>
+            <button type="submit" class="btn btn-primary">Book Now</button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row">
+        <div class="col-12">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/745/original/Exterior.jpg?1687481448"
+            class="w-100 img-fluid mb-3 mt-3 entire-building"
+            alt="photo of the entire lodge"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div id="about-us" class="col-6">
+          <h1 class="name">Prestige Guest Lodge</h1>
+        </div>
+
+        <div id="about-us" class="col-3 name border border-success">
+          <h2>Looking for a perfect place to stay</h2>
+          <p>
+            <strong
+              >Prestige Guest Lodge is a cool and quiet place to relax, hold
+              meetings and conferences.</strong
+            >
+          </p>
+
+          <p id="about-us" class="d-none d-md-block">
+            Experience <em>luxury</em> and <em>comfort</em> like never before.
+          </p>
+        </div>
+
+        <div id="rooms" class="col-3 photos name">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/750/original/HotelRoom.jpg?1687481531"
+            alt="Photo of an executive room"
+            class="img-fluid mb-2"
+            width="500"
+          />
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/795/original/SingleBedRoom.jpg?1687526847"
+            alt="photo of a double room"
+            class="img-fluid mb-2"
+            width="500"
+          />
+          <img
+            src="./LuxuryRoom.jpg"
+            alt="photo of another executive room"
+            class="img-fluid mb-2"
+            width="800"
+            w-100
+          />
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/747/original/HotelDining.jpg?1687481504"
+            alt="photo of a dining room"
+            class="img-fluid"
+            width="500"
+          />
+        </div>
+      </div>
+
+      <footer class="container mt-3 mb-3">
+        <div class="row">
+          <div class="col-6">
+            <h2 id="contact-us">Contact Us</h2>
+            📞 +254700774574 or +254723 070278 <br />
+            Visit us: Dallas Road Oppo Shell Petrol Station, Embu Kenya
+          </div>
+          <div class="col-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6399265453833!2d37.45398849248885!3d-0.5418169209441592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18262de143a915d1%3A0xa66fb10821792c62!2sPrestige%20Guest%20Lodge!5e0!3m2!1sen!2ske!4v1686706004797!5m2!1sen!2ske"
+              width="auto"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+        <small>
+          <p class="text-muted">
+            <a href="#">open-sourced</a>, by Bancy Ndirangu
+          </p></small
+        >
+      </footer>
+    </div>
+  </body>
 </html>
