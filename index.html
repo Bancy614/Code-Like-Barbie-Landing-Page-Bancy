@@ -73,6 +73,15 @@
       img:hover {
         box-shadow: var(--box-shadow);
       }
+      input {
+        font-size: 13px;
+      }
+      .email {
+        color: black;
+      }
+      .coder {
+        color: grey;
+      }
 
       footer {
         background-color: #d3c0c4;
@@ -87,6 +96,9 @@
         h1 {
           font-size: 64px;
           line-height: 80px;
+        }
+        iframe {
+          max-width: 216px;
         }
       }
     </style>
@@ -172,7 +184,7 @@
           >
             <div class="row">
               <div class="col mb-3 mt-2">
-                <label class="me-2">Check-In</label
+                <label class="me-2">Check- -In</label
                 ><input type="date" value="Check-in" />
               </div>
 
@@ -213,8 +225,8 @@
           <img
             src="./LuxuryRoom.jpg"
             alt="photo of another executive room"
-            class="img-fluid mb-2"
-            width="800"
+            class="img-fluid mb-2 mt-5"
+            width="850"
             w-100
           />
         </div>
@@ -224,27 +236,27 @@
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/750/original/HotelRoom.jpg?1687481531"
             alt="Photo of an executive room"
             class="img-fluid mb-2"
-            width="500"
+            width="850"
           />
 
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/795/original/SingleBedRoom.jpg?1687526847"
             alt="photo of a double room"
             class="img-fluid mb-2"
-            width="500"
+            width="850"
           />
 
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/747/original/HotelDining.jpg?1687481504"
             alt="photo of a dining room"
             class="img-fluid mb-2"
-            width="500"
+            width="850"
           />
           <img
             src="./meals.jpeg"
             alt="photo of delicious meals"
             class="img-fluid mb-2"
-            width="300"
+            width="850"
           />
         </div>
       </div>
@@ -259,7 +271,11 @@
             Visit us: Dallas Road Oppo Shell Petrol Station, Embu Kenya <br />
             <br />
             <i class="fa fa-envelope" aria-hidden="true"></i>
-            <a href="mailto:prestigeguestlodge@yahoo.com">
+            <a
+              href="mailto:prestigeguestlodge@yahoo.com"
+              class="email"
+              title="email"
+            >
               prestigeguestlodge@yahoo.com
             </a>
             <br /><br />
@@ -276,12 +292,23 @@
             </iframe>
           </div>
         </div>
-        <small>
-          <p class="text-muted text-center">
-            <a href="#">open-sourced</a>, by Bancy Ndirangu
-          </p></small
-        >
+        <div class="col-12">
+          <small
+            ><p class="text-center">
+              © 2010 Prestige Guest lodge Website. All rights reserved.
+            </p></small
+          >
+        </div>
       </footer>
+      <small>
+        <p class="text-muted text-center">
+          <a
+            href="https://github.com/Bancy614/Code-Like-Barbie-Landing-Page-Bancy"
+            class="coder"
+            >open-sourced</a
+          >, by Bancy Ndirangu
+        </p></small
+      >
     </div>
   </body>
 </html>
