@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Looking for a cool, luxurious hotel to stay-Prestige Guest Lodge "
+    />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -53,7 +57,7 @@
       }
 
       h1 {
-        font-weight: 700;
+        font-weight: 900;
         font-family: playfairDisplay;
         color: var(--primary-color);
         font-size: 80px;
@@ -65,6 +69,9 @@
       .name {
         box-shadow: var(--box-shadow);
         border-radius: 4px;
+      }
+      img:hover {
+        box-shadow: var(--box-shadow);
       }
 
       footer {
@@ -91,7 +98,7 @@
         data-bs-theme="dark"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">
+          <a class="navbar-brand" href="/" title="logo">
             <img
               src="./logo.webp"
               alt="logo"
@@ -113,20 +120,34 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/"
+                  title="Home"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about-us">About Us</a>
+                <a class="nav-link" href="#about-us" title="About Prestige"
+                  >About Us</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#rooms">Rooms</a>
+                <a class="nav-link" href="#rooms" title="Rooms at Prestige"
+                  >Rooms</a
+                >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#contact-us">Contact Us</a>
+                <a class="nav-link" href="#contact-us" title="Contact Prestige"
+                  >Contact Us</a
+                >
               </li>
             </ul>
-            <button type="submit" class="btn btn-primary">Book Now</button>
+            <a href="#book-now" class="btn btn-primary" title="Book room"
+              >Book Now
+            </a>
           </div>
         </div>
       </nav>
@@ -141,11 +162,42 @@
         </div>
       </div>
       <div class="row">
-        <div id="about-us" class="col-6">
+        <div id="about-us" class="col">
           <h1 class="name">Prestige Guest Lodge</h1>
+
+          <form
+            action="mailto:prestigeguestlodge@yahoo.com"
+            id="book-now"
+            class="book-form 'fs-4'>.fs-4"
+          >
+            <div class="row">
+              <div class="col mb-3 mt-2">
+                <label class="me-2">Check-In</label
+                ><input type="date" value="Check-in" />
+              </div>
+
+              <div class="col mb-3 mt-2">
+                <label class="me-2">Check-Out</label
+                ><input type="date" value="Check-out" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label class="me-2">Rooms for</label
+                ><input
+                  type="number"
+                  value="Rooms for"
+                  placeholder="Enter number of people"
+                />
+              </div>
+              <div class="col mt-2">
+                <button type="submit" class="btn btn-primary">Book Now</button>
+              </div>
+            </div>
+          </form>
         </div>
 
-        <div id="about-us" class="col-3 name border border-success">
+        <div id="about-us" class="col name border border-success">
           <h2>Looking for a perfect place to stay</h2>
           <p>
             <strong
@@ -154,24 +206,10 @@
             >
           </p>
 
-          <p id="about-us" class="d-none d-md-block">
+          <p id="about-us">
             Experience <em>luxury</em> and <em>comfort</em> like never before.
           </p>
-        </div>
 
-        <div id="rooms" class="col-3 photos name">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/750/original/HotelRoom.jpg?1687481531"
-            alt="Photo of an executive room"
-            class="img-fluid mb-2"
-            width="500"
-          />
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/795/original/SingleBedRoom.jpg?1687526847"
-            alt="photo of a double room"
-            class="img-fluid mb-2"
-            width="500"
-          />
           <img
             src="./LuxuryRoom.jpg"
             alt="photo of another executive room"
@@ -179,11 +217,34 @@
             width="800"
             w-100
           />
+        </div>
+
+        <div id="rooms" class="col name">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/750/original/HotelRoom.jpg?1687481531"
+            alt="Photo of an executive room"
+            class="img-fluid mb-2"
+            width="500"
+          />
+
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/795/original/SingleBedRoom.jpg?1687526847"
+            alt="photo of a double room"
+            class="img-fluid mb-2"
+            width="500"
+          />
+
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/747/original/HotelDining.jpg?1687481504"
             alt="photo of a dining room"
-            class="img-fluid"
+            class="img-fluid mb-2"
             width="500"
+          />
+          <img
+            src="./meals.jpeg"
+            alt="photo of delicious meals"
+            class="img-fluid mb-2"
+            width="300"
           />
         </div>
       </div>
@@ -192,10 +253,18 @@
         <div class="row">
           <div class="col-6">
             <h2 id="contact-us">Contact Us</h2>
-            📞 +254700774574 or +254723 070278 <br />
-            Visit us: Dallas Road Oppo Shell Petrol Station, Embu Kenya
+            <i class="fa fa-phone" aria-hidden="true"></i> +254700774574 or
+            +254723 070278 <br />
+            <br />
+            Visit us: Dallas Road Oppo Shell Petrol Station, Embu Kenya <br />
+            <br />
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:prestigeguestlodge@yahoo.com">
+              prestigeguestlodge@yahoo.com
+            </a>
+            <br /><br />
           </div>
-          <div class="col-6">
+          <div class="col-6 mt-4">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6399265453833!2d37.45398849248885!3d-0.5418169209441592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18262de143a915d1%3A0xa66fb10821792c62!2sPrestige%20Guest%20Lodge!5e0!3m2!1sen!2ske!4v1686706004797!5m2!1sen!2ske"
               width="auto"
@@ -208,7 +277,7 @@
           </div>
         </div>
         <small>
-          <p class="text-muted">
+          <p class="text-muted text-center">
             <a href="#">open-sourced</a>, by Bancy Ndirangu
           </p></small
         >
