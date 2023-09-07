@@ -222,9 +222,12 @@
                 placeholder="Enter No. email address"
               />
               <div class="col mt-2">
-                <button type="submit" id="button" class="btn btn-primary">
-                  Book Now
-                </button>
+                <a
+                  href="mailto:prestigeguestlodge@yahoo.com"
+                  id="button"
+                  class="btn btn-primary"
+                  >Book Now
+                </a>
               </div>
             </div>
           </form>
@@ -326,11 +329,12 @@
       >
     </div>
     <script>
-      function bookNow() {
+      function bookNow(event) {
+        event.preventDefault();
         let name = prompt("What is your first name?");
 
         alert(
-          `Thank you ${name}, looking forward to serving you. Welcome to Prestige Guest Lodge`
+          `Thank you ${name}, please forward the booking details to prestigeguestlodge@yahoo.com`
         );
       }
       let bookNowBtn = document.querySelector("#button");
